@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Fragments.SetAvailabilityFragment"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/calendar_view"
+        android:background="@color/white">
+    </CalendarView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_nineTotwelve"
+                android:text="9AM - 12PM"
+                android:fontFamily="@font/font2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/colorAccent"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_twelveTothree"
+                android:text="12PM - 3PM"
+                android:fontFamily="@font/font2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/colorAccent"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_threeTosix"
+                android:text="3PM - 6PM"
+                android:fontFamily="@font/font2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/colorAccent"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="15dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:id="@+id/txt_set_date"
+                android:textColorHint="@color/colorAccent"
+                android:hint="Available Date"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Available Time"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/green"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/txt_set_time"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

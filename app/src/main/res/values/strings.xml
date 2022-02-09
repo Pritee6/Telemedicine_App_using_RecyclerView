@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Telemedicine</string>
+
+    <string name="Open_Drawer">Open Navigation Drawer</string>
+
+    <string name="Close_Drawer">Close Navigation Drawer</string>
+
+    <string name="back"><![CDATA[<-]]></string>
+
+    <string name="forward"><![CDATA[->]]></string>
+
+    <integer-array name="Year">
+
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+
+    </integer-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_recycler_layout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/recycler_image_medicines"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Name"
+        android:id="@+id/txt_medicine_name"
+        android:layout_toRightOf="@+id/recycler_image_medicines"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"/>
+
+   <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/recycler_image_medicines"
+       android:layout_below="@+id/txt_medicine_name"
+       android:gravity="center_horizontal"
+        android:text="₹75.00"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       android:textColor="@color/white"
+       android:layout_marginLeft="20dp"
+       android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <!--<Button
+        android:id="@+id/btn_addToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/recycler_image_medicines"
+        android:layout_below="@+id/txt_price"
+        android:gravity="start"
+        android:text="Add to Cart"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:cornerRadius="10dp"
+        android:layout_gravity="start"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        app:backgroundTint="@color/colorDarkGrey"
+        android:background="@color/colorDarkGrey"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"/>
+    -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_addToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/recycler_image_medicines"
+        android:layout_below="@+id/txt_price"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/colorDarkGrey"
+        android:text="Add to Cart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tele_medicine_doctor">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TeleMedicineDoctor"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".TeleMedicineUser"></activity>
+        <activity android:name=".BuyMedicinesOnline.OrderSummary" />
+        <activity android:name=".BuyMedicinesOnline.CartActivity" />
+        <activity android:name=".BuyMedicinesOnline.MedicineDetails" />
+        <activity android:name=".Settings.TwoStepVerification" />
+        <activity android:name=".Settings.AppLock" />
+        <activity android:name=".Settings.SecuritySettings" />
+        <activity android:name=".AppointmentRequest.PdfActivity" />
+        <activity android:name=".AppointmentRequest.PdfActivity2" />
+        <activity android:name=".AppointmentRequest.PdfActivity3" />
+        <activity android:name=".Messages" />
+        <activity android:name=".SearchDoctorsNearYou.GallaryActivity" />
+        <activity android:name=".SearchDoctorsNearYou.SearchDoctorsNearYou" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".UpcomingAppointment.WeekViewActivity" />
+        <activity android:name=".UpcomingAppointment.EventEditActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

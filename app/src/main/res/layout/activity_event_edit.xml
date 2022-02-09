@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".UpcomingAppointment.EventEditActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_gravity="end|center_vertical|center_horizontal"
+        android:gravity="end|center_vertical|center_horizontal"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/eventNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical|center_horizontal"
+        android:gravity="start|center_vertical|center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:hint=" Type Event Name here"
+        android:inputType="text"
+        android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eventDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Date"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/eventTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Set Time here"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:inputType="datetime"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        android:textAllCaps="false"
+        android:onClick="saveEventAction"
+        android:layout_gravity="center"
+        app:cornerRadius="10dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home">
+        </item>
+
+        <item android:id="@+id/nav_manage_profile"
+            android:title="Manage Profile"
+            android:icon="@drawable/person">
+        </item>
+
+        <item android:id="@+id/nav_set_availability"
+            android:title="Set Availability"
+            android:icon="@drawable/set_availability">
+        </item>
+
+        <item android:id="@+id/nav_appointment_request"
+            android:title="Appointment Request"
+            android:icon="@drawable/appointment_request">
+        </item>
+
+        <item android:id="@+id/nav_upcoming_appointments"
+            android:title="Upcoming Appointments"
+            android:icon="@drawable/calendar">
+        </item>
+
+        <item android:id="@+id/nav_buy_medicines"
+            android:title="Buy Medicines"
+            android:icon="@drawable/shopping_cart">
+        </item>
+
+        <item android:id="@+id/nav_feedback"
+            android:title="Feedback"
+            android:icon="@drawable/feedback">
+        </item>
+
+        <item android:id="@+id/nav_payment"
+            android:title="Payment"
+            android:icon="@drawable/payment"/>
+
+         <item
+             android:id="@+id/nav_settings"
+             android:title="Settings"
+             android:icon="@drawable/settings">
+         </item>
+
+        <item
+            android:id="@+id/nav_user_app"
+            android:title="Are you a patient/user?"
+            android:icon="@drawable/switch_app">
+        </item>
+
+    </group>
+
+</menu>

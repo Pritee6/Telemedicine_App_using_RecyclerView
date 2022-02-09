@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="2dp"
+    android:background="@color/black">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@color/colorDarkGrey"
+        app:cardMaxElevation="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_ClinicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/white"
+        android:hint="Hospital/Clinic Name"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup_Clinic"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/radioButton_Visiting_Clinic"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="Visiting Clinic"/>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/radioButton_OwnedClinic"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:text="Owned Clinic"/>
+            </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_ClinicAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/white"
+        android:hint="Address"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_ClinicFees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/white"
+            android:hint="Fees in Rupee"
+            android:inputType="number"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_ClinicTiming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/white"
+            android:hint="Clinic Timing"
+            android:inputType="datetime"
+            android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+
+    <ProgressBar
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_Documents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Submit Document"
+        android:textSize="15sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/file_name"
+        android:layout_below="@id/submit_Documents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:text="Upload Document"
+        android:textSize="15sp"
+        android:id="@+id/btn_upload_document"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="8dp"/>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

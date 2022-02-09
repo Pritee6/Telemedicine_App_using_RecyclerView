@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings.TwoStepVerification"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Two-Step Verification"
+        app:titleTextColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Single-factor authentication (SFA), in which the user provides only one factor -- typically, a password or passcode.\t Two-factor authentication methods rely on a user providing a password, as well as a second factor, usually either a security token or a biometric factor, such as a fingerprint or facial scan.
+            \n\nWe provide multiple ways to keep your account secure. In addition to turning on various forms of two-factor authentication, you can also enable biometric locking and unlocking the TeleMedicine App utilizing your phone’s fingerprint.
+
+\n\nTurn biometric access on:
+
+\nTap your menu > Tap Settings > Tap Security.
+\nOn the Security tab, tap App Lock and toggle On.
+\nAuthenticate with your fingerprint to unlock the TeleMedicine App.
+\n\nTurn biometric access off:
+\nTap your menu > Tap Settings > Tap Security.
+\nOn the Security tab, tap App Lock and toggle Off to disable."
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btn_setUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set-Up"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="10dp"/>
+
+</LinearLayout>

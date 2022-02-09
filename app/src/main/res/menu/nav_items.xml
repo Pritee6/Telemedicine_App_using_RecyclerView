@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/personalDetails"
+        android:title="Personal Details"/>
+
+    <item
+        android:id="@+id/registrationDetails"
+        android:title="Registration Details"/>
+
+    <item
+        android:id="@+id/clinicDetails"
+        android:title="Clinic Details"/>
+
+</menu>

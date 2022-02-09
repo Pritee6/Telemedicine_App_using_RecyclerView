@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Fragments.SwitchToUserAppFragment"
+    android:background="@color/black">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to switch to Patient/User Telemedicine App"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:backgroundTint="@color/colorDarkGrey"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:id="@+id/btn_switchtoUserApp"/>
+
+</FrameLayout>
